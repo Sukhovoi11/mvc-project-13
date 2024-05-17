@@ -14,7 +14,7 @@ Przed rozpoczęciem instalacji upewnij się, że masz zainstalowane następując
 Następnie wykonaj poniższe kroki:
 
 1. Sklonuj repozytorium z kodem źródłowym:
-git clone https://github.com/Sukhovoi11/mvc-project-12
+git clone https://github.com/Sukhovoi11/mvc-project-13
 
 
 ### Uruchomienie aplikacji
