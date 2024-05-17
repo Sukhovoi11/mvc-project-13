@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dodaj film</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+<h1>Dodaj nowy film</h1>
+<form action="/add" method="post" class="add-movie-form">
+  <label for="title">Tytuł:</label>
+  <input type="text" id="title" name="title" required /><br />
+  <label for="genre">Gatunek:</label>
+  <input type="text" id="genre" name="genre" required /><br />
+  <label for="year">Rok:</label>
+  <input type="number" id="year" name="year" required /><br />
+  <button type="submit" class="add-movie-button">Dodaj film</button>
+</form>
+<form action="/" method="get" class="add-form">
+  <button type="submit" id="returnToList" class="return-to-list">Powrót do listy</button>
+</form>
+</body>
+</html>

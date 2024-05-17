@@ -1,0 +1,194 @@
+/* Подключение шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: url('cherv.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: #fff;
+}
+
+.add-expense-form, .edit-expense-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.add-expense-button, .edit-expense-button, .return-to-list, .add-new-movie, .report-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+
+.add-expense-button, .edit-expense-button {
+    background-color: #4169E1;
+}
+
+.add-expense-button:hover, .edit-expense-button:hover {
+    background-color: #3151b7;
+    transform: translateY(-2px);
+}
+
+.return-to-list {
+    background-color: #6495ED;
+    margin-top: 10px;
+}
+
+.return-to-list:hover {
+    background-color: #4169E1;
+    transform: translateY(-2px);
+}
+
+.add-new-movie, .report-button {
+    background-color: #6495ED;
+    margin: 0 10px;
+
+}
+
+.add-new-movie:hover, .report-button:hover {
+    background-color: #4169E1;
+    transform: translateY(-2px);
+
+}
+
+.edit-button, .delete-button {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+.add-movie-button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    background-color: #6495ed;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+
+}
+.add-movie-form label {
+    color: #fff;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.edit-movie-form label {
+    color: #ffffff;
+}
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.edit-movie-button{
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+
+    color: #ffffff;
+    background-color: #6495ed;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+.edit-button:hover {
+    background-color: #45a049;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+    color: white;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stan</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+<h1>Stan Kataloga Filmów</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Gatunek</th>
+    <th>Ilość</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for (let genre in movies) { %>
+    <tr>
+      <td><%= genre %></td>
+      <td><%= movies[genre] %></td>
+    </tr>
+  <% } %>
+  </tbody>
+</table>
+<form action="/" method="get" class="report-form">
+  <button type="submit" id="returnToList" class="return-to-list">Powrót do listy</button>
+</form>
+</body>
+</html>

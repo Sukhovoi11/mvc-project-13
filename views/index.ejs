@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Katalog filmów</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+<h1>Katalog filmów</h1>
+<div class="controls-container">
+  <form action="/add" method="get" class="add-report-form">
+    <button type="submit" id="addMovieButton" class="add-new-movie">Dodaj nowy film</button>
+  </form>
+  <form action="/report" method="get" class="add-report-form">
+    <button type="submit" id="showReportButton" class="report-button">Pokaż stan </button>
+  </form>
+</div>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Tytuł</th>
+    <th>Gatunek</th>
+    <th>Rok</th>
+    <th>Akcje</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% movies.forEach(function(movie) { %>
+    <tr>
+      <td><%= movie.id %></td>
+      <td><%= movie.title %></td>
+      <td><%= movie.genre %></td>
+      <td><%= movie.year %></td>
+      <td>
+        <a href="/edit/<%= movie.id %>">Edytuj</a> |
+        <a href="/delete/<%= movie.id %>">Usuń</a>
+      </td>
+    </tr>
+  <% }); %>
+  </tbody>
+</table>
+</body>
+</html>
